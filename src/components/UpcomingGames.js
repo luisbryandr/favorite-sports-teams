@@ -16,7 +16,7 @@ const dummyData = [
 export default function UpcomingGames () {
     return (
         <div>
-            <h3>The next upcoming matches are below:</h3>
+            <h3>UpcomingGames:</h3>
             {dummyData.map(details => {
                 return <p>vs {details.team} on {details.date}</p>
             })}

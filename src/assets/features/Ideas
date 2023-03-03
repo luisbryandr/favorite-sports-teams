@@ -1,0 +1,15 @@
+//MVP:  Display MY favorite Teams (3-5) on screen
+    /* 
+        - Display next 3 upcoming games
+        - Display current League rankings
+        - Display injured players list if api allows
+        - 
+    */
+
+//Future stretch! but i really want: 
+//  ability to add to my calendar and set reminder or text me the infor day before the next game or something like that - I want to able to forget about and get only my favorite teams games to me for reference.
+
+
+//Future/ Stretch:  Add ability for user to look for their favorite team by name using this api call as an example (https://v3.football.api-sports.io/teams?name=manchester united()
+
+//Future/ Stretch: Ability to create user profiles (will need a back end to store crednetials or outsource this and use back end only to store preferences / api calls they make  database with their favorite teams info (id, logo, etc))
