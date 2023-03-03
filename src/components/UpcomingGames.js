@@ -1,3 +1,24 @@
+import axios from 'axios';
+
+//will need to move to a separate file
+const FIXTURES_URL = 'https://v3.football.api-sports.io/fixtures?season=2022&team=529&next=3'
+const API_REQUEST_HEADERS = {
+    'X-RapidAPI-Host': 'v3.football.api-sports.io'
+    , 'X-RapidAPI-Key': '953200a1e98efd99b0adee31b6175653'
+  };
+const upcomingFixtures = axios.get( FIXTURES_URL, {
+    headers: API_REQUEST_HEADERS
+    // params: {
+    //     season: 2022,
+    //     team:529,
+    //     next:3
+    // }
+} )
+    .then( res => {
+     return res.data.response
+    } )
+    .catch(err => console.log(err))
+
 const dummyData = [
     {
         "id":1,
@@ -12,6 +33,7 @@ const dummyData = [
 
 ]
 
+console.log(upcomingFixtures);
 
 export default function UpcomingGames () {
     return (
