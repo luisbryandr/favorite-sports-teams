@@ -3,6 +3,15 @@ IDS of notes
 Premier League = 39;
 La Liga = 140;
 Barcelona = 529;
+PSG = 85;
+ManU = 33;
+
+team: {
+id: 33
+name: "Manchester United"
+team: {
+id: 85
+name: "Paris Saint Germain"
 
 */
 
