@@ -1,0 +1,15 @@
+.upcoming-games-container {
+    /* border: 2px solid blue; */
+}
+
+.single-match-container {
+    /* border: 1px solid magenta; */
+    max-height: 50%;
+    color:white;
+    background-color: darkgray;
+    background: transparent;
+}
+
+.single-match-container img {
+    size: 50%;
+}

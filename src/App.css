@@ -1,56 +1,40 @@
-.App {
-  text-align: center;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App {
+  background-image: url('../src/assets/Images/pexels-mario-cuadros-2413089.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid orange; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-.team-container {
-  border: 2px solid seagreen;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: space-around;
-}
 
 @media (max-width: 800px) {
   .team-container {
     flex-direction: column;
   }
 }
+
+
  /* Right now, doing CSS for a single team but will need to modify to accomodate multiple teams next to each other
  
   Right now targeting -team-container div in Team.js (singular Team)

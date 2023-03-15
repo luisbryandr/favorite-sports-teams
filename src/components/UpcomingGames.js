@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-
+import './upcomingGames.css'
 
 //will need to move to a separate file
 const FIXTURES_URL = ' https://v3.football.api-sports.io/fixtures?season=2022&team=529&next=3'
@@ -23,10 +23,10 @@ export default function UpcomingGames() {
 
 
     return (
-        <div>
+        <div className='upcoming-games-container'>
             {upcomingGames && upcomingGames.map((game, idx) => {
                 return (
-                    <div>
+                    <div className='single-match-container'>
                         <img src="https://media.api-sports.io/football/teams/529.png" alt="Barcelona's Logo"></img> 
                         <h3>Upcoming Games:</h3>
                         <p key={idx}> {game.teams.home.name} (Home) vs {game.teams.away.name} (Away)</p>
