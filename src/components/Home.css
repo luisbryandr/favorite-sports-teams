@@ -1,0 +1,6 @@
+.teams_container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
