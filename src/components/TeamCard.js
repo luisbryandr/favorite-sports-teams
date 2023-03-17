@@ -27,6 +27,7 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
     {
+        border: 1px solid #e1e1e1;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         padding: 20px;
@@ -34,6 +35,7 @@ const CardWrapper = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: white;
 
         @media only screen and (max-width: 768px) {
             flex-direction: column;

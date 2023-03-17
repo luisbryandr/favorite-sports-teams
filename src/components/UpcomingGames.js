@@ -25,23 +25,36 @@ export default function UpcomingGames({ teamNumber }) {
             .catch(err => console.error(err))
     },[])
 
+    const options = {
+        timeZone: 'America/New_York',
+        month: '2-digit',
+        day: '2-digit',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true,
+      };
+
+      
     return (
         <UpcomingGamesWrapper>
             {upcomingGames && upcomingGames.map((game, idx) => {
+                const timestamp = new Date(game.fixture.date);
+                const formattedTime = timestamp.toLocaleString('en-US', options);
             return (
                 <SingleGameWrapper>
-                    <li key={idx}> {game.teams.home.name} (Home) vs {game.teams.away.name} (Away)</li>
-                </SingleGameWrapper>      
+                    <li key={idx}> {game.teams.home.name} (Home) vs {game.teams.away.name} (Away) on {formattedTime}</li>
+                 </SingleGameWrapper> 
             )
                 
             })}    
-        </UpcomingGamesWrapper>   
+        </UpcomingGamesWrapper> 
     )
 }
 
 
 const UpcomingGamesWrapper = styled.div`
-  border: 1px solid #e1e1e1;
+//   border: 1px solid #e1e1e1;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -58,7 +71,7 @@ const SingleGameWrapper = styled.div`
   {
     max-height: 50%;
     color:white;
-    background-color: darkgray;
+    // background-color: darkgray;
     // background: transparent;        
     font-size: 16px;
     padding: 10px;
