@@ -10,8 +10,6 @@
 
 
 .App {
-  background-image: url('../src/assets/Images/wave-haikei.svg');
-  background-size: cover;
   /* display: flex;
   flex-direction: row;
   flex-wrap: nowrap; */
@@ -20,6 +18,7 @@
   width: 100%;
   /* border: 2px solid orange; */
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   
@@ -36,9 +35,4 @@
 }
 
 
- /* Right now, doing CSS for a single team but will need to modify to accomodate multiple teams next to each other
- 
-  Right now targeting -team-container div in Team.js (singular Team)
-  Later will need to target TEAMS Container div in TEAMS.js (all teams) 
-  
- */
+
