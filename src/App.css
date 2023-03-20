@@ -10,10 +10,11 @@
 
 
 .App {
-  background-image: url('../src/assets/Images/pexels-mario-cuadros-2413089.jpg');
+  background-image: url('../src/assets/Images/wave-haikei.svg');
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; */
   text-align: center;
   height: 100%;
   width: 100%;

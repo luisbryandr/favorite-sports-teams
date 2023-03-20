@@ -1,0 +1,15 @@
+.teams_container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .teams_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+  }
