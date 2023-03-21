@@ -1,4 +1,66 @@
-h1 {
-    align-self: center ;
-    color:bisque;
+#Header {
+    height: 35vh;
+    width: 100%;
+}
+
+.header-background {
+    height: 100%;
+    width: 100%;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto  5vh;
+    color: crimson;
+}
+
+.title-container h1 {
+    font-size: 2rem;
+    color:crimson;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.title-container h2 {
+    font-size: 1rem;
+    color: crimson;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.nav-bar-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% auto 0;
+}
+
+.nav-bar-container a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 414px) {
+    .nav-bar-container{
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10% auto 0;
+    }
+    
+    .nav-bar-container a {
+        width: 40%;
+        color: crimson;
+        font-size: 1.5rem;
+        margin: 2px 1px;
+    }
 }

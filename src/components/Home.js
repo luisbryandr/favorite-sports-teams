@@ -12,17 +12,34 @@ const  Home = () => {
 
 
         return ( 
-            <div className="teams_container">
-                {/* SearchBar component would go here with  */}
-                {teams.map((team,index) => {
-                return ( 
-                    <TeamCard key={index} team={team} />
-                ) 
-            })} 
+            <div id="Main">
+                <div className="home-background-image">
+                    <div className="teams_container">
+                        {/* SearchBar component would go here with  */}
+                        {teams.map((team,index) => {
+                        return ( 
+                            <TeamCard key={index} team={team} />
+                            ) 
+                        })} 
+                    </div>
+
+                </div>
+                
+
             </div>
+            
                 
         )
 }
 
 export default Home;
 
+// const dummyData = {
+//     {
+//         logo:"",
+//         home_team: "Barcelona",
+//         away_team: "Real Madrid",
+//         date: "April 1st at 3 PM"
+//     }
+    
+// }
