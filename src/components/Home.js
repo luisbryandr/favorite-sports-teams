@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import TeamCard from "./TeamCard";
-import Header from "./Header";
 // import SearchBar from "./SearchBar";
 
 import './Home.css';
@@ -13,10 +12,9 @@ const  Home = () => {
 
 
         return ( 
-            <div className="home">
-                <Header />
+            <div id="Main">
                 <div className="home-background-image">
-                    <div            className="teams_container">
+                    <div className="teams_container">
                         {/* SearchBar component would go here with  */}
                         {teams.map((team,index) => {
                         return ( 
