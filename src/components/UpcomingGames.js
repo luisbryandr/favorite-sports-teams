@@ -4,11 +4,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 // import './upcomingGames.css'
 
-const FIXTURES_URL = 'https://v3.football.api-sports.io/fixtures?season=2022&' 
-    const API_REQUEST_HEADERS = {
-            'X-RapidAPI-Host': 'v3.football.api-sports.io',
-            'x-rapidapi-key': '953200a1e98efd99b0adee31b6175653'
-        };
+import { FIXTURES_URL, API_REQUEST_HEADERS } from '../assets/API/APICalls'
 
 export default function UpcomingGames({ teamNumber }) {
     //    const { teamNumber } = props.teamNumber
@@ -20,7 +16,7 @@ export default function UpcomingGames({ teamNumber }) {
         axios.get(`${FIXTURES_URL}&team=${teamNumber}&next=3`,{ headers: API_REQUEST_HEADERS })
             .then(res => {
                 setUpcomingGames(res.data.response)
-                console.log(res)
+                console.log(res.data.response)
             })
             .catch(err => console.error(err))
     },[])
