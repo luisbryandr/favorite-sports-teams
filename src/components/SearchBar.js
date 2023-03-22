@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import TeamCard from "./TeamCard";
 
 const Form = styled.form`
   display: flex;
@@ -20,13 +21,13 @@ const Button = styled.button`
   padding: 0 10px;
   border: none;
   border-radius: 0 5px 5px 0;
-  background-color: #4caf50;
+  background-color: crimson;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: #388e3c;
+    background-color: red;
   }
 `;
 
@@ -57,3 +58,4 @@ const SearchBar = ({ onAddTeam }) => {
 };
 
 export default SearchBar;
+

@@ -13,8 +13,8 @@ import {
 
 const  Home = () => {
 
-        const [ teams, setTeams ] = useState(["529","33", "85"])
-
+        const [ teams, setTeams ] = useState([])
+        //"529","33", "85"
         //setTeams will be used by SearchBar to add teams based on name (search will reaquire call to the API to get ID of team needed for logos, fixtures, etc
         const onAddTeam = (teamName) => {
                 axios.get(`${TEAM_SEARCH_URL}${teamName}`, {headers: API_REQUEST_HEADERS })

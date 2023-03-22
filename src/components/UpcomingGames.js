@@ -52,8 +52,8 @@ export default function UpcomingGames({ teamNumber }) {
 const UpcomingGamesWrapper = styled.div`
 //   border: 1px solid #e1e1e1;
   border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
+  // padding: 20px;
+  // margin-bottom: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -66,12 +66,12 @@ const UpcomingGamesWrapper = styled.div`
 const SingleGameWrapper = styled.div`
   {
     max-height: 50%;
-    color:white;
+    color: white;
     // background-color: darkgray;
     // background: transparent;        
     font-size: 16px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 3px;
+    border-radius: 3px;
     flex: 1; 
   }
 `;

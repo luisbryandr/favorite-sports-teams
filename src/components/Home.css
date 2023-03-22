@@ -5,9 +5,10 @@
 
 .teams_container {
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-height: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -28,7 +29,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
  
