@@ -17,19 +17,17 @@
     display: flex;
     flex-direction: column;
     margin: 10px auto  5vh;
-    color: crimson;
+    color: darkred;
 }
 
 .title-container h1 {
     font-size: 2rem;
-    color:crimson;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
 .title-container h2 {
     font-size: 1rem;
-    color: crimson;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -44,7 +42,7 @@
 
 .nav-bar-container a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: crimson;
+    color: darkred;
     font-size: 1.5rem;
 }
 @media screen and (max-width: 414px) {

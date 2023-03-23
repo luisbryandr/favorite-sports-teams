@@ -21,7 +21,7 @@ const Button = styled.button`
   padding: 0 10px;
   border: none;
   border-radius: 0 5px 5px 0;
-  background-color: crimson;
+  background-color: darkred;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
