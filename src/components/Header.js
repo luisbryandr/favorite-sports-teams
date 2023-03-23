@@ -4,7 +4,7 @@ import './header.css';
 
 export default function Main () {
         const header = {
-            title: 'Favorite Teams Page',
+            title: 'Favorite Soccer Teams Page',
             slogan: 'A simplified way to follow -ONLY- the teams you care about'
         }
 

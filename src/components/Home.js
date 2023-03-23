@@ -49,13 +49,3 @@ const  Home = () => {
 }
 
 export default Home;
-
-// const dummyData = {
-//     {
-//         logo:"",
-//         home_team: "Barcelona",
-//         away_team: "Real Madrid",
-//         date: "April 1st at 3 PM"
-//     }
-    
-// }

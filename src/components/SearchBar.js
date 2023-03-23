@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import TeamCard from "./TeamCard";
 
 const Form = styled.form`
   display: flex;
@@ -10,14 +9,15 @@ const Form = styled.form`
 
 const Input = styled.input`
   flex-grow: 1;
-  height: 30px;
+  height: 45px;
   padding: 5px;
   border: none;
   border-radius: 5px 0 0 5px;
+  width: 250px;
 `;
 
 const Button = styled.button`
-  height: 30px;
+  height: 45px;
   padding: 0 10px;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -48,7 +48,7 @@ const SearchBar = ({ onAddTeam }) => {
     <Form onSubmit={handleSubmit}>
       <Input
         type="text"
-        placeholder="Search for a team"
+        placeholder="Search for your favorite soccer teams"
         value={searchText}
         onChange={handleChange}
       />

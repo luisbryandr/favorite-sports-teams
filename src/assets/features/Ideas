@@ -13,3 +13,7 @@
 //Future/ Stretch:  Add ability for user to look for their favorite team by name using this api call as an example (https://v3.football.api-sports.io/teams?name=manchester united()
 
 //Future/ Stretch: Ability to create user profiles (will need a back end to store crednetials or outsource this and use back end only to store preferences / api calls they make  database with their favorite teams info (id, logo, etc))
+
+//Going to need to add an x button to take out a searched team from state to stop displaying
+
+//need to fix styling for responsiveness for really small screens it breaks at less than 790px 
