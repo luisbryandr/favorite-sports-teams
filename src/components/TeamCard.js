@@ -36,6 +36,7 @@ const CardWrapper = styled.div`
         flex-direction: column;
         align-items: center;
         color: white;
+        max-width: 500px;
 
         @media only screen and (max-width: 768px) {
             flex-direction: column;
