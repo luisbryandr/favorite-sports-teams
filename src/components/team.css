@@ -1,8 +1,0 @@
-.team-container {
-    /* border: 4px solid seagreen; */
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: space-around;
-  }

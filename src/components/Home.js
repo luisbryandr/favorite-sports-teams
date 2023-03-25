@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TeamCard from "./TeamCard";
 import SearchBar from "./SearchBar";
 
-import './Home.css';
+import './home.css';
 import axios from "axios";
 
 import { 
@@ -28,7 +28,7 @@ const  Home = () => {
             }
 
         return ( 
-            <div id="Main">
+            <div id="Home">
                 <div className="home-background-image">
                    <SearchBar onAddTeam={onAddTeam}/>
                     <div className="teams_container">

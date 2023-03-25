@@ -4,10 +4,8 @@ import styled from 'styled-components';
 // import NewsHeadlines from './NewsHeadlines';
 // import MiscInfo from './MiscInfo';
 
-// import teamLogo from '../assets/Images/teamLogo.png'
 
- const TeamCard = ({ team }) => {
-    // const { teamNumber } = props.team
+ const TeamCard = ({ team }) => { 
 
     return (
         <CardWrapper>

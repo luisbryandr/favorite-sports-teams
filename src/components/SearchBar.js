@@ -1,6 +1,33 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+
+const SearchBar = ({ onAddTeam }) => {
+  const [searchText, setSearchText] = useState("");
+
+  const handleChange = (event) => {
+    setSearchText(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onAddTeam(searchText);
+    setSearchText("");
+  };
+
+  return (
+    <Form onSubmit={handleSubmit}>
+      <Input
+        type="text"
+        placeholder="Search for your favorite soccer teams"
+        value={searchText}
+        onChange={handleChange}
+      />
+      <Button type="submit">Add Team</Button>
+    </Form>
+  );
+};
+
 const Form = styled.form`
   display: flex;
   align-items: center;
@@ -31,31 +58,4 @@ const Button = styled.button`
   }
 `;
 
-const SearchBar = ({ onAddTeam }) => {
-  const [searchText, setSearchText] = useState("");
-
-  const handleChange = (event) => {
-    setSearchText(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    onAddTeam(searchText);
-    setSearchText("");
-  };
-
-  return (
-    <Form onSubmit={handleSubmit}>
-      <Input
-        type="text"
-        placeholder="Search for your favorite soccer teams"
-        value={searchText}
-        onChange={handleChange}
-      />
-      <Button type="submit">Add Team</Button>
-    </Form>
-  );
-};
-
 export default SearchBar;
-
