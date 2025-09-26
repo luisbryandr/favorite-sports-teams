@@ -19,6 +19,6 @@ Originally built in 2023 and lightly refreshed in 2025 for reliability, clarity,
 
 1. Clone the repo:
    ```bash
-  git clone https://github.com/luisbryandr/favorite-sports-teams.git
-  cd favorite-sports-teams
+   git clone https://github.com/luisbryandr/favorite-sports-teams.git
+   cd favorite-sports-teams
    
